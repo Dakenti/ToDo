@@ -4,4 +4,19 @@
    <FileRef
       location = "group:ToDo/ToDo.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:Frameworks"
+      name = "Frameworks">
+      <Group
+         location = "group:Base"
+         name = "Base">
+      </Group>
+      <Group
+         location = "group:Services"
+         name = "Services">
+         <FileRef
+            location = "group:../../NetworkManager/NetworkManager.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
 </Workspace>

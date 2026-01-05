@@ -6,8 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		848B79E62F0BCACD0008E3EF /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848B79E52F0BCACD0008E3EF /* NetworkManager.framework */; };
+		848B79E72F0BCACD0008E3EF /* NetworkManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 848B79E52F0BCACD0008E3EF /* NetworkManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		848B79E82F0BCACD0008E3EF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				848B79E72F0BCACD0008E3EF /* NetworkManager.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		848B797F2F0BB5440008E3EF /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		848B79E52F0BCACD0008E3EF /* NetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848B79E62F0BCACD0008E3EF /* NetworkManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				848B79812F0BB5440008E3EF /* ToDo */,
+				848B79E42F0BCACD0008E3EF /* Frameworks */,
 				848B79802F0BB5440008E3EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +80,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		848B79E42F0BCACD0008E3EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				848B79E52F0BCACD0008E3EF /* NetworkManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,6 +98,7 @@
 				848B797B2F0BB5440008E3EF /* Sources */,
 				848B797C2F0BB5440008E3EF /* Frameworks */,
 				848B797D2F0BB5440008E3EF /* Resources */,
+				848B79E82F0BCACD0008E3EF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
